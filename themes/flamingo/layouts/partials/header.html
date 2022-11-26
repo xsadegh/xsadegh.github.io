@@ -1,0 +1,25 @@
+<header>
+	<!-- title wrapper -->
+	<div class="title-wrapper">
+		<a href="/">
+			<h2 class="title">{{ .Site.Title }}</h2>
+		</a>
+		<nav>
+			<ul>
+				<li><a href="/posts/">posts</a></li>
+				<li><a href="/projects/">projects</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- title wrapper end -->
+
+	{{ with .Site.Menus.main }}
+	<nav>
+		<ul>
+			{{ range . }}
+			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+			{{ end }}
+		</ul>
+	</nav>
+	{{ end }}
+</header>

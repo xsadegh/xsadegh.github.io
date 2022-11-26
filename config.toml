@@ -1,0 +1,34 @@
+baseURL = "https://sadegh.io/"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+
+pygmentsCodefences = true
+pygmentsStyle = "colorful"
+
+paginate = 20
+
+title = "Sadegh"
+theme = "flamingo"
+[markup.goldmark.renderer]
+unsafe = true
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+
+publishDir = "docs"
+
+[params]
+author = "Sadegh"
+description = "Thoughts, obsessions, and mostly rants"
+sitename = "Sadegh"
+github = "https://github.com/xsadegh"
+twitter = "@iosadegh"
+favicon = "/images/favicon.ico"
+
+[languages]
+[languages.en]
+languageName = "English"
+languageCode = "en-us"
+weight = 1
